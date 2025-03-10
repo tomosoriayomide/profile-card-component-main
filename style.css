@@ -6,7 +6,7 @@
 body {
   background: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
-  background-position: -150px -200px, 120% 550%;
+  background-position: -150px -200px, 120% 5000%;
   background-size: 50%;
   background-repeat: no-repeat;
   /* background-size: contain; */
@@ -14,9 +14,9 @@ body {
 }
 .cont {
   background-color: white;
-  width: 27%;
-  height: 50vh;
-  margin: 150px auto;
+  width: 25%;
+  height: 75vh;
+  margin: 100px auto;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -42,9 +42,10 @@ body {
   border-radius: 100%;
   position: absolute;
   left: 35%;
+  /* background-color: red; */
   /* margin: 10px auto; */
   border: 5px solid white;
-  top: -20%;
+  top: -30%;
   margin-bottom: 30px;
 }
 h2 {
@@ -92,9 +93,17 @@ h2 {
   margin-top: 5px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .cont {
     width: 100%;
+  }
+  .top {
+    background-size: cover;
+    padding: 50px;
+    /* height: 150vh; */
+  }
+  .victor {
+    top: -20%;
   }
   body {
     padding: 30px;
@@ -104,5 +113,17 @@ h2 {
     background-color: hsl(185, 75%, 39%);
     background-repeat: no-repeat;
     background-position: -700px -500px, 100px 300px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  .cont {
+    width: 80%;
+  }
+  .top {
+    background-size: cover;
+  }
+  .victor {
+    top: -15%;
+    left: 40%;
   }
 }
